@@ -1,0 +1,20 @@
+<form class="calculator" id="{{id}}">
+    <input name="output" type="text" />
+
+    <button class="number">1</button>
+    <button class="number">2</button>
+    <button class="number">3</button>
+    <button class="number">4</button>
+
+    <button class="minus">-</button>
+    <button class="add">+</button>
+    <button type="submit">=</button>
+</form>
+
+<script>
+    app.global.add_startup_function(function () {
+        var calculator_view = new app.components.calculator({
+            el: '.calculator'
+        });
+    });
+</script>

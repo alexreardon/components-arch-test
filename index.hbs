@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Component Example</title>
+    <link type="text/css" href="bower_components/bootstrap-sass/dist/css/bootstrap.css" />
+</head>
+<body>
+<!-- allows for component registration -->
+<script src="global/main.js"></script>
+
+
+{{> calculator}}
+
+<!-- the following files would be concatenated -->
+<!-- global files -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+
+<!-- all components source files -->
+<script src="components/calculator/src/javascript/main.js"></script>
+
+
+<script>
+    // run the startup functions
+    $(function () {
+        app.global.init();
+    });
+</script>
+</body>
+</html>

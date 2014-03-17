@@ -1,0 +1,25 @@
+{
+  "name": "components",
+  "version": "0.0.0",
+  "authors": [
+    "Alex Reardon <alexreardon@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11",
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.2",
+    "bootstrap-sass": "~3.0.2"
+  }
+}
